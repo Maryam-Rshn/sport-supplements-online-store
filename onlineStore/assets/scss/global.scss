@@ -1,0 +1,43 @@
+// typography
+@import 'typography';
+
+// variables (colors, functions, mixins, ...)
+@import 'helpers/variables';
+
+// basic element styles
+@import 'elements';
+
+// helpers
+@import 'helpers/helpers';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: iranYekan, sans-serif;
+
+  // &:lang(fa){
+  //   font-family: IRANSans;
+  // }
+}
+
+html:lang(en) {
+  direction: ltr;
+  
+  // h1,h2,h3,h4,h5,h6,p {
+  //   text-align: left !important;
+  // }
+}
+
+html:lang(fa) {
+  direction: rtl;
+  
+  // h1,h2,h3,h4,h5,h6,p {
+  //   text-align: right !important;
+  // }
+}
+
+.main{
+  margin-top: 65px;
+  margin-bottom: 17vw;
+}
